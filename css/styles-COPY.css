@@ -53,9 +53,7 @@ img {
     /* border: 10px solid red; */
 }
 
-svg {
-    /* border: 10px solid red; */
-}
+
 
 button {
     cursor: pointer;
@@ -163,16 +161,6 @@ button {
 }
 
 /* ======================= Клас, котрий вирізає з потоку і приховує ========================= */
-/* .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0px;
-    overflow: hidden;
-    border: 0px;
-    clip: rect(0 0 0 0);
-} */
 
 .visually-hidden {
     position: absolute;
@@ -1123,14 +1111,14 @@ button {
     }
 
     .privil-list-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 264px;
-            height: 112px;
-            margin-bottom: 8px;
-            background-color: var(--light-colors);
-            border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+        background-color: var(--light-colors);
+        border-radius: 4px;
     }
     
     /* ================================== Section 3. What are we doing. для 1200+  ================================== */
@@ -1191,7 +1179,7 @@ button {
         text-align: left;
         padding-bottom: 0px;
     }
-    .foter-cosial-media {
+    .foter-cosial- {
         margin-left: 120px;
         padding-bottom: 0px;
     }

@@ -1,0 +1,45 @@
+@import '../../utilities/placeholder';
+
+// =======================*======================= Srction 1. Hero! =======================*======================= // 
+/* Button text style */
+.button-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;    
+    @extend %small-text;
+
+    letter-spacing: 0.04em; 
+    color: $primary-brand-color;
+}
+
+/* Hero-button text style */
+.hero-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+
+    font-weight: 500;
+    @extend %small-text;
+    letter-spacing: 0.04em; 
+    
+    color: $hero-text-color;
+    background-color: $primary-brand-color;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: color $transition-var, background-color $transition-var;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        background-color: $pressed-state-color;
+    }
+}
+
+// .hero-button:focus,
+// .hero-button:hover {
+//     color: $accent-color;
+//     background-color: $pressed-state-color;
+// }

@@ -1,0 +1,214 @@
+@import '../utilities/placeholder';
+
+// =======================*======================= Declare global variables! =======================*======================= // 
+
+// ======================= Colors ======================= //
+$primary-brand-color: #4D5AE5;
+$primary-brand-color-a: rgba(64, 75, 191, 0.9);
+$pressed-state-color: #404bbf;
+$hero-text-color: #ffffff;
+$dark-color: #2e2f42;
+$dark-color-rgba: rgba(47, 47, 66, 0.5);
+$modal-window: #FCFCFC;
+$success-color: #31D0AA;
+$text-color: #434455;
+$light-colors: #F4F4FD;
+$subtle-text-color: #8E8F99;
+$accent-color: #E7E9FC;
+
+// ======================= For section! ======================= //
+$space-under-section: 120px;
+
+// ======================= Animation time function! ======================= //
+$transition-var: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// =======================*======================= Body global style! =======================*======================= // 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    color: $dark-color;
+}
+
+h1, h2, h3, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul, ol {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+img {
+    display: block;
+    margin-right: 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
+// =======================*======================= Link and list! =======================*======================= // 
+/* Link style */
+.link {
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list {
+    list-style: none;
+}
+
+// =======================*======================= Text Guide! =======================*======================= // 
+/* Global main paramrters for text */
+.main-text-style {
+    font-style: normal;
+    letter-spacing: 0.02em;
+}
+
+/* H1 style */
+.hero-title {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    font-size: 56px;
+    line-height: 1.15;   
+    
+    color: $hero-text-color;
+}
+
+.fool-title {
+    margin-bottom: 72px;
+}
+
+/* H2 style */
+.title-second {
+    text-align: center;
+
+    padding-bottom: 72px;
+
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;   
+}
+
+/* H3 style */
+.title-third {
+    margin-top: 0px;
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    
+    color: $dark-color;
+}
+
+/* Body text style */
+.small-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    @extend %small-text;
+
+    color: $text-color;
+}
+
+.small-text-laptop {    
+    font-size: 12px;
+    line-height: 1.16;
+    
+    color: $text-color;
+}
+
+/* Body text style 2 */
+.medium-text {
+    @extend %medium-text;
+
+    color: $dark-color;
+}
+
+/* Footer text */
+.footer-text {
+    min-width: 264px;
+    padding-top: 16px;
+
+    @extend %small-text;
+
+    color: $accent-color;
+}
+
+/* Text style Footer social media before list of icon */
+.medium-text-footer-social {
+    margin-bottom: 16px;
+
+    @extend %medium-text;
+    
+    color: $hero-text-color;
+}
+
+.section-f-double-pad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.h-underline {
+    border-bottom: 1px solid $accent-color;
+}
+
+// =======================*======================= BG section Colors! =======================*======================= // 
+.bg-color-f {      
+    background-color: $dark-color;
+}
+
+/* BG section Our Team */
+.our-team-colors-bg {
+     background-color: $light-colors;
+}
+
+// =======================*======================= Containers for mob-tab-desc! =======================*======================= // 
+.container {
+    /* width: 100%; */
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* --- Mobile container ---- */
+@media  screen and (min-width: 480px) {
+    .container {
+        width: 428px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* --- Planshet container ---- */
+@media  screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+/* --- Desctop container ---- */
+@media  screen and (min-width: 1200px) {
+    .container {
+        width: 1160px;
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../base/base-styles';
+@import '../../utilities/mixin';
+
+// =======================*======================= Logo! =======================*======================= // 
+.logo-web {
+    // font-family: 'Raleway', sans-serif;
+    // font-style: normal;
+    // font-weight: 800;
+    // font-size: 18px;
+    // line-height: 1.33;
+    // color: $primary-brand-color; 
+    // text-transform: uppercase;
+    @include logo-style($primary-brand-color);
+}
+
+
+
+.logo-studio-h {
+    // font-family: 'Raleway', sans-serif;
+    // font-style: normal;
+    // font-weight: 800;
+    // font-size: 18px;
+    // line-height: 1.33;
+    // color: $dark-color;
+    // text-transform: uppercase;
+    @include logo-style($dark-color);
+}
+
+.logo-studio-f {
+    // font-family: 'Raleway', sans-serif;
+    // font-style: normal;
+    // font-weight: 800;
+    // font-size: 18px;
+    // line-height: 1.33;
+    // color: $light-colors;
+    // text-transform: uppercase;
+    @include logo-style($light-colors);
+}
+
+

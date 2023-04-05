@@ -1,0 +1,11 @@
+
+
+@mixin logo-style($color) {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: $color; 
+    text-transform: uppercase;
+}
