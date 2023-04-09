@@ -1,0 +1,100 @@
+// =======================* Section 5. Customers! (-> 767 including) *======================= // 
+/* --- Section 5. Customers! (-> 767 including) --- */
+.section-customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.customers-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-top: -72px;
+}
+
+.customers-list-item {
+    display: flex;
+    
+}
+
+.customers-list > .customers-list-item {
+    flex-basis: calc(100% / 2 - 16px);
+    margin-left: 16px;
+    margin-top: 72px;
+}
+
+.customers-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 88px;
+    border: 1px solid $subtle-text-color;
+    border-radius: 4px;
+    transition: border-color $transition-var;
+
+    &:focus,
+    &:hover {
+    border-color: $primary-brand-color;
+    }
+}
+
+.customers-list-icon {
+    fill: $subtle-text-color;
+    transition: fill $transition-var;
+
+    .customers-list-link:focus &,
+    .customers-list-link:hover & {
+    fill: $primary-brand-color;
+    } 
+
+}
+
+// =======================* Section 5. Customers! (768+) *======================= // 
+/* --- Section 5. Customers! (768+) --- */
+@media screen and (min-width: 768px) {
+    .customers-list-link {
+        width: 168px;
+    }
+
+    .customers-list {
+        display: flex;
+        
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        flex-wrap: wrap;
+        margin-left: -24px;
+        margin-top: -72px;
+    }
+    
+    .customers-list-item {
+        display: block;
+        max-width: 168px;
+    }
+    
+    .customers-list > .customers-list-item {
+        flex-basis: calc(100% / 3 - 2 * 24px);
+        margin-left: 24px;
+        margin-top: 72px;
+    }
+}
+
+// =======================* Section 5. Customers! (1200+) *======================= // 
+/* --- Section 5. Customers! (1200+) --- */
+@media screen and (min-width: 1200px) {
+    .section-customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .customers-list {
+        flex-wrap: nowrap;
+        margin-left: -24px;
+    }
+}
+
+
+

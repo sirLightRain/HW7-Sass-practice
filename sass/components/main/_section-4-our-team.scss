@@ -1,0 +1,126 @@
+// =======================* Section 4. Our team! (-> 767 including) *======================= // 
+/* --- Section 4. Our team! (-> 767 including) --- */
+.section-our-team {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.team-cards {
+    text-align: center;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-cards .item + .item {
+    margin-top: 72px;
+}
+
+.card-description {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: $hero-text-color;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-description > .title-third {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: $dark-color;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $primary-brand-color;
+    transition: background-color $transition-var;
+
+    &:focus,
+    &:hover {
+    background-color: $pressed-state-color;
+    }
+
+}
+
+.small-text-icon {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: $text-color;
+    margin-bottom: 8px;
+}
+
+.social-list-icon {
+    fill: $light-colors;
+}
+
+// =======================* Section 4. Our team! (768+) *======================= // 
+/* --- Section 4. Our team! (768+) --- */
+@media screen and (min-width: 768px) {
+    .team-cards .item + .item {
+        margin-top: 64px;
+    }
+
+    .team-cards {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        margin-left: -24px;
+        margin-top: -64px;
+    }
+
+    .card-description {
+        width: 264px;
+    }
+
+    .team-cards > .item {
+        margin-left: 24px;
+        margin-top: 64px;
+    }
+}
+
+// =======================* Section 4. Our team! (1200+) *======================= // 
+/* --- Section 4. Our team! (1200+) --- */
+@media screen and (min-width: 1200px) {
+    .section-our-team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-cards > .item {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .team-cards {
+        flex-wrap: nowrap;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .team-cards .item + .item {
+        margin-top: 0px;
+    }
+
+    .our-team-item + .our-team-item {
+        margin-left: 24px;
+    }
+}

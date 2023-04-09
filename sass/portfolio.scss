@@ -1,0 +1,17 @@
+@import './base/base-styles';
+@import './utilities/is-hiden';
+@import './utilities/mixin';
+@import './utilities/placeholder';
+// Header
+@import './components/header/logo';
+@import './components/header/main-navigation';
+@import './components/header/contacts';
+@import './components/header/mobile-button-menu';
+@import './components/header/mobile-drop-windov';
+// Portfolio
+@import './components/portfolio/portfolio-button-menu';
+@import './components/portfolio/portfolio-cards';
+// Footer
+@import './components/footer/footer';
+// For social icons class/ Change later: = use @each and base-style
+@import './components/main/section-4-our-team';

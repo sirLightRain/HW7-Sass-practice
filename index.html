@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-07-Studio</title>
     <!-- ====================== Attaching text styles. ====================== -->
     <link 
         rel="preconnect" 
@@ -15,14 +15,23 @@
         href="https://fonts.gstatic.com" 
         crossorigin
         >
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet"
+    >
     <!-- ====================== Normalization. ====================== -->    
     <link 
         rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     >
-    <!-- ====================== Attaching a styles file. ====================== -->
+    <!-- ====================== Attaching animation library! ====================== -->
+    <!-- ====================== (Used like:animate__animated animate__(name of animation)) ====================== -->
+    <!-- ====================== (resource: https://animate.style/) ====================== -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- ====================== Attaching styles file. ====================== -->
     <link 
         rel="stylesheet" 
         href="./dist/css/index.min.css"
@@ -44,9 +53,9 @@
             
                     <!-- ====================== Main page navigation ====================== -->
                     <ul class="site-nav link">
-                        <li class="site-nav-item item"><a href="./index.html" class="link medium-text nav-index">Studio</a></li> 
-                        <li class="item"><a href="./portfolio.html" class="link medium-text">Portfolio</a></li>
-                        <li class="item"><a href="" class="link medium-text">Contacts</a></li>
+                        <li class="site-nav-item item"><a href="./index.html" class="link medium-text nav-index animate__animated animate__swing">Studio</a></li> 
+                        <li class="item"><a href="./portfolio.html" class="link medium-text animate__animated animate__swing">Portfolio</a></li>
+                        <li class="item"><a href="" class="link medium-text animate__animated animate__swing">Contacts</a></li>
                     </ul>
             </nav>
              
@@ -234,7 +243,9 @@
                 <ul class="photo link">
                     <li class="item">
                         <img 
-                            srcset="./images/what-are-we-doing/monitor.jpg 1x, ./images/what-are-we-doing/monitor@2x.jpg 2x"
+                            srcset="
+                                ./images/what-are-we-doing/monitor.jpg 1x, 
+                                ./images/what-are-we-doing/monitor@2x.jpg 2x"
                             src="./images/monitor.jpg" 
                             alt="monitor" 
                             width="360" height="300"
@@ -242,7 +253,8 @@
                     </li>
                     <li class="item">
                         <img 
-                            srcset="./images/what-are-we-doing/phone.jpg 1x, ./images/what-are-we-doing/phone@2x.jpg 2x"
+                            srcset="./images/what-are-we-doing/phone.jpg 1x, 
+                                ./images/what-are-we-doing/phone@2x.jpg 2x"
                             src="./images/phone.jpg" 
                             alt="phone" 
                             width="360" height="300"
@@ -250,7 +262,8 @@
                     </li>
                     <li class="item">
                         <img 
-                            srcset="./images/what-are-we-doing/phon-plus-laptop.jpg 1x, ./images/what-are-we-doing/phon-plus-laptop@2x.jpg 2x"
+                            srcset="./images/what-are-we-doing/phon-plus-laptop.jpg 1x, 
+                                ./images/what-are-we-doing/phon-plus-laptop@2x.jpg 2x"
                             src="./images/what-are-we-doing/phon-plus-laptop.jpg" 
                             alt="phone and laptop" 
                             width="360" height="300"
@@ -272,7 +285,8 @@
     
                         <li class="our-team-item item">
                             <img 
-                                srcset="./images/our-team/mark-guerrero.jpg 1x, ./images/our-team/mark-guerrero@2x.jpg 2x"
+                                srcset="./images/our-team/mark-guerrero.jpg 1x, 
+                                    ./images/our-team/mark-guerrero@2x.jpg 2x"
                                 src="./images/our-team/mark-guerrero.jpg" 
                                 alt="Product Designer Mark Guerrero" 
                                 width="264">
@@ -321,10 +335,11 @@
     
                         <li class="our-team-item item">
                             <img 
-                            srcset="./images/our-team/tom-ford.jpg 1x, ./images/our-team/tom-ford@2x.jpg 2x" 
-                            src="./images/our-team/tom-ford.jpg" 
-                            alt="Frontend Developer Tom Ford" 
-                            width="264">
+                                srcset="./images/our-team/tom-ford.jpg 1x, 
+                                    ./images/our-team/tom-ford@2x.jpg 2x" 
+                                src="./images/our-team/tom-ford.jpg" 
+                                alt="Frontend Developer Tom Ford" 
+                                width="264">
                             <div class="card-description">
                                 <h3 class="title-third">Tom Ford</h3>
                                 <p class="small-text-icon">Frontend Developer</p>
@@ -370,7 +385,8 @@
     
                         <li class="our-team-item item">
                             <img 
-                                srcset="./images/our-team/camila-garcia.jpg 1x, ./images/our-team/camila-garcia@2x.jpg 2x" 
+                                srcset="./images/our-team/camila-garcia.jpg 1x, 
+                                    ./images/our-team/camila-garcia@2x.jpg 2x" 
                                 src="./images/our-team/camila-garcia.jpg" 
                                 alt="Marketing Camila Garcia" 
                                 width="264">
@@ -419,7 +435,8 @@
     
                         <li class="our-team-item item">
                             <img 
-                                srcset="./images/our-team/daniel-wilson.jpg 1x, ./images/our-team/daniel-wilson@2x.jpg 2x" 
+                                srcset="./images/our-team/daniel-wilson.jpg 1x, 
+                                    ./images/our-team/daniel-wilson@2x.jpg 2x" 
                                 src="./images/our-team/daniel-wilson.jpg" 
                                 alt="UI Designer Daniel Wilson" 
                                 width="264">
@@ -707,7 +724,6 @@
                             class="customers-check visually-hidden"
                         />
                         <label for="user_policy" class="contact-form-text-description-c">
-                            
                             I accept the terms and conditions of the &nbsp <a href="" class="privacy-policy">Privacy Policy</a>
                         </label>
                     
@@ -723,3 +739,5 @@
     <script src="./js/mobile-menu-old.js"></script>
 </body>
 </html>
+
+

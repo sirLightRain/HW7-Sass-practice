@@ -1,0 +1,16 @@
+// =======================* Conacts (Header mail + phone)! (768+) *======================= // 
+@media screen and (min-width:768px) {
+    .auth-nav-laptop {
+        display: block;
+    }
+    
+    .auth-nav {
+        display: none;  
+    }
+    
+    .adress-nav {
+        margin-left: auto;
+        display: flex;
+        transition: color $transition-var;
+    }
+}

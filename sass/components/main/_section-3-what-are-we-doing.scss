@@ -1,0 +1,25 @@
+// =======================* Section 3. What are we doing! (-> 767 including)*======================= // 
+.element-direction-index {
+    display: none;
+}
+
+/* --- Section 3. What are we doing! (768+) --- */
+
+/* --- Section 3. What are we doing! (1200+) --- */
+@media screen and (min-width: 1200px) {
+    .photo {
+        display: flex; 
+    }
+    
+    .photo .item + .item {
+        margin-left: 24px;
+    }
+    
+    .element-direction-index {
+        display: flex;
+    }
+    
+    .section-singl-pad {
+        padding-bottom: 120px;
+    }
+}

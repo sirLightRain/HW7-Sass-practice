@@ -935,10 +935,6 @@ button {
         margin-top: 64px;
     }
 
-    .customers-list-link {
-        width: 168px;
-    }
-
     .team-cards {
         padding: 0px;
         margin: 0px;
@@ -972,6 +968,10 @@ button {
         margin-top: -72px;
     }
     
+    .customers-list-link {
+        width: 168px;
+    }   
+
     .customers-list-item {
         display: block;
         max-width: 168px;
@@ -1243,25 +1243,6 @@ button {
     overflow: hidden;
 }
 
-.overley {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    padding: 40px 32px;
-    color: var(--light-colors);
-    background-color: var(--primary-brand-color-a);
-
-    transform: translate(0, 100%);
-    transition: transform var(--transition-var);
-}
-
-.card-set .item .link:hover .overley,
-.card-set .item .link:focus .overley {
-    transform: translate(0, 0);
-}
 /* ================================================================== Portfolio cards ================================================================== */
 
 .card-set {
@@ -1299,6 +1280,26 @@ button {
     margin-top: 48px;
 }
 
+
+.overley {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 40px 32px;
+    color: var(--light-colors);
+    background-color: var(--primary-brand-color-a);
+
+    transform: translate(0, 100%);
+    transition: transform var(--transition-var);
+}
+
+.card-set .item .link:hover .overley,
+.card-set .item .link:focus .overley {
+    transform: translate(0, 0);
+}
 /* ================================================================== Modal window! ================================================================== */
 
 .backdrop {

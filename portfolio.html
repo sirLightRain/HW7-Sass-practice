@@ -4,50 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>goit-markup-hw-07-Portfolio</title>
     <!-- ====================== Attaching text styles. ====================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com">
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <!-- ====================== Normalization. ====================== -->    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <!-- ====================== Attaching a styles file. ====================== -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link 
+        rel="stylesheet" 
+        href="./dist/css/portfolio.min.css">
 </head>
 
 <body>
     
-    <!-- ====================== Page header! ====================== -->
-    <header class="h-underline">
-        <!-- ====================== Main navigation ====================== -->
-                  
-        <div class="main-nav container">
-            <nav class="main-nav">
-                <!-- ====================== logo created as a text ====================== -->
-                <a href="./index.html" class="link"><span class="logo-web">Web</span><span class="logo-studio-h">Studio</span></a>
-            
-                    <!-- ====================== Main page navigation ====================== -->
-                    <ul class="site-nav link">
-                        <li class="item"><a href="./index.html" class="link medium-text">Studio</a></li> 
-                        <li class="site-nav-item item"><a href="./portfolio.html" class="link medium-text nav-index">Portfolio</a></li>
-                        <li class="item"><a href="" class="link medium-text">Contacts</a></li>
-                    </ul>
-            </nav>
+        <!-- ====================== Page header! ====================== -->
+        <header class="h-underline">
+            <!-- ====================== Main navigation ====================== -->
+                      
+            <div class="main-nav container">
+                <nav class="main-nav">
+                    <!-- ====================== logo created as a text ====================== -->
+                    <a href="./index.html" class="link page-header">
+                        <span class="logo-web">Web</span><span class="logo-studio-h">Studio</span>
+                    </a>
+                
+                        <!-- ====================== Main page navigation ====================== -->
+                        <ul class="site-nav link">
+                            <li class="item"><a href="./index.html" class="link medium-text">Studio</a></li> 
+                            <li class="site-nav-item item"><a href="./portfolio.html" class="link medium-text nav-index">Portfolio</a></li>
+                            <li class="item"><a href="" class="link medium-text">Contacts</a></li>
+                        </ul>
+                </nav>
+                 
+                <!-- ====================== Contacts ====================== -->
+                <address class="adress-nav">
+    
+                        <!-- 796+ size letter -->
+                        <ul class="link auth-nav-laptop">
+                            <li class="item"><a href="mailto:info@devstudio.com" class="link small-text-laptop carrent">info@devstudio.com</a></li>
+                            <li class="item"><a href="tel:+110001111111" class="link small-text-laptop carrent">+11 (000) 111-11-11</a></li>
+                        </ul>
+    
+                        <!-- 1200+ size letter -->
+                        <ul class="link auth-nav">
+                            <li class="item"><a href="mailto:info@devstudio.com" class="link small-text carrent">info@devstudio.com</a></li>
+                            <li class="item"><a href="tel:+110001111111" class="link small-text carrent">+11 (000) 111-11-11</a></li>
+                        </ul>
                     
-                    <!-- ====================== Contacts ====================== -->
-            
-            <address class="adress-nav">
-                
-                    <ul class="auth-nav link">
-                        <li class="item"><a href="mailto:info@devstudio.com" class="link small-text carrent">info@devstudio.com</a></li>
-                         <li class="item"><a href="tel:+110001111111" class="link small-text carrent">+11 (000) 111-11-11</a></li>
-                    </ul>
-                
-            </address>
-        </div >
+                </address>
+    
+                <!-- ====================== Mobile variant close buttom + menu ====================== -->  
+                <button type="button" class="mobile-menu-open" data-menu-open>
+                    <svg class="mobile-menu-open_icon icon-mob" width="32" height="22">
+                        <use href="./images/icons.svg#burger-icon"></use>
+                    </svg>
+                </button> 
+            </div >
+    
+            <!-- ====================== Mobile menu drop window ====================== --> 
+            <div class="mobile-menu" data-menu>
+                <div class="mobile-menu-container">
+                    <button class="mobile-menu_close-btn"  width="24" height="24" data-menu-close>
+                        <svg class="mobile-menu_close-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-modal"></use>
+                        </svg>
+                    </button>
         
-    </header>
+                    <!-- Mobile menu main nav -->
+                    <ul class="link drop-site-nav">
+                        <li class="item drop-site-nav-item">
+                            <a href="./index.html" class="link drop-site-nav-text">Studio</a>
+                        </li>
+                        <li class="item drop-site-nav-item">
+                            <a href="./portfolio.html" class="link drop-site-nav-text">Portfolio</a>
+                        </li>
+                        <li class="item drop-site-nav-item">
+                            <a href="" class="link drop-site-nav-text carrent">Contacts</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Mobile menu mail + tel -->
+                    <ul class="drop-mobile-menu link">
+                        <li class="mob-menu-item item">
+                            <a href="tel:+110001111111" class="mob-text-style link">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mob-menu-item item">
+                            <a href="mailto:info@devstudio.com" class="ema-text-style link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+        
+                    <!-- Mobile menu social net -->
+                    <ul class="social-list-mob list">
+    
+                        <li class="social-list-iten-mob">
+                            <a href="" class="social-list-link-mob">
+                                <svg class="social-list-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-our-team-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li class="social-list-iten-mob">
+                            <a href="" class="social-list-link-mob">
+                                <svg class="social-list-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-our-team-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li class="social-list-iten-mob">
+                            <a href="" class="social-list-link-mob">
+                                <svg class="social-list-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-our-team-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li class="social-list-iten-mob">
+                            <a href="" class="social-list-link-mob">
+                                <svg class="social-list-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-our-team-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                    </ul>
+    
+                </div>   
+            </div>
+        </header>
+
     <!-- ====================== Main oraginal conten ====================== -->
     <main>
 
@@ -59,7 +156,7 @@
             <div class="b-positionong">
                 <ul class="btm link">
                     <li class="item"><button type="button" class="button-nav button-text">All</button></li>
-                    <li class="item"><button type="button" class="button-nav button-text">Web Site</button></li>
+                    <li class="item"><button type="button" class="button-nav button-text">Web&nbsp;Site</button></li>
                     <li class="item"><button type="button" class="button-nav button-text">App</button></li>
                     <li class="item"><button type="button" class="button-nav button-text">Design</button></li>
                     <li class="item"><button type="button" class="button-nav button-text">Marketing</button></li>
@@ -73,10 +170,42 @@
                     <li class="item">
                         <a href="" class="link">
                             <div class="wrapper">
-                                <img src="./images/portfolio/bank-app.jpg" alt="banking applications" width="360" height="300">
+                                <picture>
+                                    <!-- 1200px => --> 
+                                    <source srcset="./images/portfolio/1200/webp/bank-app-desc.webp 1x, 
+                                                    ./images/portfolio/1200/webp/bank-app-desc@2x.webp 2x" 
+                                        media="(min-width: 1200px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/1200/jpg/bank-app-desc.jpg 1x, 
+                                                    ./images/portfolio/1200/jpg/bank-app-desc@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <!-- 768px => -->
+                                    <source srcset="./images/portfolio/768/webp/bank-app-tab.webp 1x, 
+                                                    ./images/portfolio/768/webp/bank-app-tab@2x.webp 2x" 
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/768/jpg/bank-app-tab.jpg 1x, 
+                                                    ./images/portfolio/768/jpg/bank-app-tab@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <!-- => 767px -->
+                                    <source srcset="./images/portfolio/480/webp/bank-app-mob.webp 1x, 
+                                                    ./images/portfolio/480/webp/bank-app-mob@2x.webp 2x" 
+                                        media="(max-width: 767px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/480/jpg/bank-app-mob.jpg 1x, 
+                                                    ./images/portfolio/480/jpg/bank-app-mob@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+
+                                    <img src="./images/portfolio/480/bank-app-mob.jpg" 
+                                        alt="banking applications"> 
+                                        <!-- width="360"  -->
+                                        <!-- height="300"  -->
+                                </picture>
+
                                 <p class="overley small-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio delectus consequuntur rem tempora praesentium omnis nam expedita corrupti minus!
                                 </p>
+
                             </div>
                             <div class="card-set-description"> 
                                 <h2 class="title-third">Banking App Interface Concept</h2>
@@ -88,7 +217,36 @@
                     <li class="item">
                         <a href="" class="link">
                             <div class="wrapper">
-                                <img src="./images/portfolio/mobile-in-car.jpg" alt="banking applications" width="360" height="300">
+                                <picture>
+                                    <!-- 1200px => --> 
+                                    <source srcset="./images/portfolio/1200/webp/mobile-in-car-desc.webp 1x, 
+                                                    ./images/portfolio/1200/webp/mobile-in-car-desc@2x.webp 2x" 
+                                        media="(min-width: 1200px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/1200/jpg/mobile-in-car-desc.jpg 1x, 
+                                                    ./images/portfolio/1200/jpg/mobile-in-car-desc@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <!-- 768px => -->
+                                    <source srcset="./images/portfolio/768/webp/mobile-in-car-tab.webp 1x, 
+                                                    ./images/portfolio/768/webp/mobile-in-car-tab@2x.webp 2x" 
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/768/jpg/mobile-in-car-tab.jpg 1x, 
+                                                    ./images/portfolio/768/jpg/mobile-in-car-tab@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <!-- => 767px -->
+                                    <source srcset="./images/portfolio/480/webp/mobile-in-car-mob.webp 1x, 
+                                                    ./images/portfolio/480/webp/mobile-in-car-mob@2x.webp 2x" 
+                                        media="(max-width: 767px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/480/jpg/mobile-in-car-mob.jpg 1x, 
+                                                    ./images/portfolio/480/jpg/mobile-in-car-mob@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+
+                                    <img src="./images/portfolio/480/mobile-in-car-mob.jpg" 
+                                        alt="banking applications"> 
+                                </picture>
+                                
                                 <p class="overley small-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio delectus consequuntur rem tempora praesentium omnis nam expedita corrupti minus!
                                 </p>
@@ -103,7 +261,36 @@
                     <li class="item">
                         <a href="" class="link">
                             <div class="wrapper">
-                                <img src="./images/portfolio/laptop.jpg" alt="banking applications" width="360" height="300">
+                                <picture>
+                                    <!-- 1200px => --> 
+                                    <source srcset="./images/portfolio/1200/webp/laptop-desc.webp 1x, 
+                                                    ./images/portfolio/1200/webp/laptop-desc@2x.webp 2x" 
+                                        media="(min-width: 1200px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/1200/jpg/laptop-desc.jpg 1x, 
+                                                    ./images/portfolio/1200/jpg/laptop-desc@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <!-- 768px => -->
+                                    <source srcset="./images/portfolio/768/webp/laptop-tab.webp 1x, 
+                                                    ./images/portfolio/768/webp/laptop-tab@2x.webp 2x" 
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/768/jpg/laptop-tab.jpg 1x, 
+                                                    ./images/portfolio/768/jpg/laptop-tab@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <!-- => 767px -->
+                                    <source srcset="./images/portfolio/480/webp/laptop-mob.webp 1x, 
+                                                    ./images/portfolio/480/webp/laptop-mob@2x.webp 2x" 
+                                        media="(max-width: 767px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/480/jpg/laptop-mob.jpg 1x, 
+                                                    ./images/portfolio/480/jpg/laptop-mob@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+
+                                    <img src="./images/portfolio/480/laptop-mob.jpg" 
+                                        alt="banking applications">
+                                </picture>
+
                                 <p class="overley small-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio delectus consequuntur rem tempora praesentium omnis nam expedita corrupti minus!
                                 </p>
@@ -118,7 +305,36 @@
                     <li class="item">
                         <a href="" class="link">
                             <div class="wrapper">
-                                <img src="./images/portfolio/steering-wheel.jpg" alt="banking applications" width="360" height="300">
+                                <picture>
+                                    <!-- 1200px => --> 
+                                    <source srcset="./images/portfolio/1200/webp/steering-wheel-desc.webp 1x, 
+                                                    ./images/portfolio/1200/webp/steering-wheel-desc@2x.webp 2x" 
+                                        media="(min-width: 1200px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/1200/jpg/steering-wheel-desc.jpg 1x, 
+                                                    ./images/portfolio/1200/jpg/steering-wheel-desc@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <!-- 768px => -->
+                                    <source srcset="./images/portfolio/768/webp/steering-wheel-tab.webp 1x, 
+                                                    ./images/portfolio/768/webp/steering-wheel-tab@2x.webp 2x" 
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/768/jpg/steering-wheel-tab.jpg 1x, 
+                                                    ./images/portfolio/768/jpg/steering-wheel-tab@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <!-- => 767px -->
+                                    <source srcset="./images/portfolio/480/webp/steering-wheel-mob.webp 1x, 
+                                                    ./images/portfolio/480/webp/steering-wheel-mob@2x.webp 2x" 
+                                        media="(max-width: 767px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/480/jpg/steering-wheel-mob.jpg 1x, 
+                                                    ./images/portfolio/480/jpg/steering-wheel-mob@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+
+                                    <img src="./images/portfolio/480/steering-wheel-mob.jpg" 
+                                        alt="banking applications">
+                                </picture>
+                                
                                 <p class="overley small-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio delectus consequuntur rem tempora praesentium omnis nam expedita corrupti minus!
                                 </p>
@@ -133,7 +349,36 @@
                     <li class="item">
                         <a href="" class="link">
                             <div class="wrapper">
-                                <img src="./images/portfolio/mobile-pic.jpg" alt="banking applications" width="360" height="300">
+                                <picture>
+                                    <!-- 1200px => --> 
+                                    <source srcset="./images/portfolio/1200/webp/mobile-pic-desc.webp 1x, 
+                                                    ./images/portfolio/1200/webp/mobile-pic-desc@2x.webp 2x" 
+                                        media="(min-width: 1200px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/1200/jpg/mobile-pic-desc.jpg 1x, 
+                                                    ./images/portfolio/1200/jpg/mobile-pic-desc@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <!-- 768px => -->
+                                    <source srcset="./images/portfolio/768/webp/mobile-pic-tab.webp 1x, 
+                                                    ./images/portfolio/768/webp/mobile-pic-tab@2x.webp 2x" 
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/768/jpg/mobile-pic-tab.jpg 1x, 
+                                                    ./images/portfolio/768/jpg/mobile-pic-tab@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <!-- => 767px -->
+                                    <source srcset="./images/portfolio/480/webp/mobile-pic-mob.webp 1x, 
+                                                    ./images/portfolio/480/webp/mobile-pic-mob@2x.webp 2x" 
+                                        media="(max-width: 767px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/480/jpg/mobile-pic-mob.jpg 1x, 
+                                                    ./images/portfolio/480/jpg/mobile-pic-mob@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+
+                                    <img src="./images/portfolio/480/mobile-pic-mob.jpg" 
+                                        alt="banking applications">
+                                </picture>
+                                
                                 <p class="overley small-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio delectus consequuntur rem tempora praesentium omnis nam expedita corrupti minus!
                                 </p>
@@ -148,7 +393,36 @@
                     <li class="item">
                         <a href="" class="link">
                             <div class="wrapper">
-                                <img src="./images/portfolio/young-girl.jpg" alt="banking applications" width="360" height="300">
+                                <picture>
+                                    <!-- 1200px => --> 
+                                    <source srcset="./images/portfolio/1200/webp/young-girl-desc.webp 1x, 
+                                                    ./images/portfolio/1200/webp/young-girl-desc@2x.webp 2x" 
+                                        media="(min-width: 1200px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/1200/jpg/young-girl-desc.jpg 1x, 
+                                                    ./images/portfolio/1200/jpg/young-girl-desc@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <!-- 768px => -->
+                                    <source srcset="./images/portfolio/768/webp/young-girl-tab.webp 1x, 
+                                                    ./images/portfolio/768/webp/young-girl-tab@2x.webp 2x" 
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/768/jpg/young-girl-tab.jpg 1x, 
+                                                    ./images/portfolio/768/jpg/young-girl-tab@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <!-- => 767px -->
+                                    <source srcset="./images/portfolio/480/webp/young-girl-mob.webp 1x, 
+                                                    ./images/portfolio/480/webp/young-girl-mob@2x.webp 2x" 
+                                        media="(max-width: 767px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/480/jpg/young-girl-mob.jpg 1x, 
+                                                    ./images/portfolio/480/jpg/young-girl-mob@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+
+                                    <img src="./images/portfolio/480/young-girl-mob.jpg" 
+                                        alt="banking applications">
+                                </picture>
+                                
                                 <p class="overley small-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio delectus consequuntur rem tempora praesentium omnis nam expedita corrupti minus!
                                 </p>
@@ -163,7 +437,36 @@
                     <li class="item">
                         <a href="" class="link">
                             <div class="wrapper">
-                                <img src="./images/portfolio/portret-pic.jpg" alt="design of stories for Instagram" width="360" height="300">
+                                <picture>
+                                    <!-- 1200px => --> 
+                                    <source srcset="./images/portfolio/1200/webp/portret-pic-desc.webp 1x, 
+                                                    ./images/portfolio/1200/webp/portret-pic-desc@2x.webp 2x" 
+                                        media="(min-width: 1200px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/1200/jpg/portret-pic-desc.jpg 1x, 
+                                                    ./images/portfolio/1200/jpg/portret-pic-desc@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <!-- 768px => -->
+                                    <source srcset="./images/portfolio/768/webp/portret-pic-tab.webp 1x, 
+                                                    ./images/portfolio/768/webp/portret-pic-tab@2x.webp 2x" 
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/768/jpg/portret-pic-tab.jpg 1x, 
+                                                    ./images/portfolio/768/jpg/portret-pic-tab@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <!-- => 767px -->
+                                    <source srcset="./images/portfolio/480/webp/portret-pic-mob.webp 1x, 
+                                                    ./images/portfolio/480/webp/portret-pic-mob@2x.webp 2x" 
+                                        media="(max-width: 767px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/480/jpg/portret-pic-mob.jpg 1x, 
+                                                    ./images/portfolio/480/jpg/portret-pic-mob@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+
+                                    <img src="./images/portfolio/480/portret-pic-mob.jpg" 
+                                        alt="banking applications">
+                                </picture>
+                                
                                 <p class="overley small-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio delectus consequuntur rem tempora praesentium omnis nam expedita corrupti minus!
                                 </p>
@@ -178,7 +481,36 @@
                     <li class="item">
                         <a href="" class="link">
                             <div class="wrapper">
-                                <img src="./images/portfolio/mesh-beg.jpg" alt="banking applications" width="360" height="300">
+                                <picture>
+                                    <!-- 1200px => --> 
+                                    <source srcset="./images/portfolio/1200/webp/mesh-beg-desc.webp 1x, 
+                                                    ./images/portfolio/1200/webp/mesh-beg-desc@2x.webp 2x" 
+                                        media="(min-width: 1200px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/1200/jpg/mesh-beg-desc.jpg 1x, 
+                                                    ./images/portfolio/1200/jpg/mesh-beg-desc@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <!-- 768px => -->
+                                    <source srcset="./images/portfolio/768/webp/mesh-beg-tab.webp 1x, 
+                                                    ./images/portfolio/768/webp/mesh-beg-tab@2x.webp 2x" 
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/768/jpg/mesh-beg-tab.jpg 1x, 
+                                                    ./images/portfolio/768/jpg/mesh-beg-tab@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <!-- => 767px -->
+                                    <source srcset="./images/portfolio/480/webp/mesh-beg-mob.webp 1x, 
+                                                    ./images/portfolio/480/webp/mesh-beg-mob@2x.webp 2x" 
+                                        media="(max-width: 767px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/480/jpg/mesh-beg-mob.jpg 1x, 
+                                                    ./images/portfolio/480/jpg/mesh-beg-mob@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+
+                                    <img src="./images/portfolio/480/mesh-beg-mob.jpg" 
+                                        alt="banking applications">
+                                </picture>
+                                
                                 <p class="overley small-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio delectus consequuntur rem tempora praesentium omnis nam expedita corrupti minus!
                                 </p>
@@ -193,7 +525,36 @@
                     <li class="item">
                         <a href="" class="link">
                             <div class="wrapper">
-                                <img src="./images/portfolio/cup-of-coffee.jpg" alt="banking applications" width="360" height="300">
+                                <picture>
+                                    <!-- 1200px => --> 
+                                    <source srcset="./images/portfolio/1200/webp/cup-of-coffee-desc.webp 1x, 
+                                                    ./images/portfolio/1200/webp/cup-of-coffee-desc@2x.webp 2x" 
+                                        media="(min-width: 1200px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/1200/jpg/cup-of-coffee-desc.jpg 1x, 
+                                                    ./images/portfolio/1200/jpg/cup-of-coffee-desc@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <!-- 768px => -->
+                                    <source srcset="./images/portfolio/768/webp/cup-of-coffee-tab.webp 1x, 
+                                                    ./images/portfolio/768/webp/cup-of-coffee-tab@2x.webp 2x" 
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/768/jpg/cup-of-coffee-tab.jpg 1x, 
+                                                    ./images/portfolio/768/jpg/cup-of-coffee-tab@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <!-- => 767px -->
+                                    <source srcset="./images/portfolio/480/webp/cup-of-coffee-mob.webp 1x, 
+                                                    ./images/portfolio/480/webp/cup-of-coffee-mob@2x.webp 2x" 
+                                        media="(max-width: 767px)"
+                                        type="image/webp">
+                                    <source srcset="./images/portfolio/480/jpg/cup-of-coffee-mob.jpg 1x, 
+                                                    ./images/portfolio/480/jpg/cup-of-coffee-mob@2x.jpg 2x" 
+                                        media="(max-width: 767px)">
+
+                                    <img src="./images/portfolio/480/cup-of-coffee-mob.jpg" 
+                                        alt="banking applications">
+                                </picture>
+                                <!-- cup-of-coffee -->
                                 <p class="overley small-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio delectus consequuntur rem tempora praesentium omnis nam expedita corrupti minus!
                                 </p>
@@ -211,13 +572,16 @@
         
     </main>
 
-    <!-- ====================== Page footer! ====================== -->
+    <!-- ============================= Footer. ============================= -->
     <footer class="section-f-double-pad bg-color-f">
         
         <div class="container footer-box">
 
             <div class="logo-f-size">
-                <a href="./index.html" class="link"><span class="logo-web">Web</span><span class="logo-studio-f">Studio</span></a>
+                <div class="logo-box">
+                    <a href="./index.html" class="link"><span class="logo-web">Web</span><span class="logo-studio-f">Studio</span>
+                    </a>
+                </div>
                 <p class="footer-text">
                     Increase the flow of customers and <br> sales for your business with digital <br> marketing & growth solutions. 
                 </p>
@@ -279,7 +643,7 @@
                     />
                     <button type="submit" class="subscribe-button">Subscribe
                         <svg class="subscribe-btm-icon" width="24" height="20">
-                            <use href="/images/icons.svg#icon-plane"></use>
+                            <use href="./images/icons.svg#icon-plane"></use>
                         </svg>
                     </button>
                     
@@ -289,6 +653,8 @@
 
         </div>
           
-    </footer>
+    </footer> 
+    
+    <script src="./js/mobile-menu-old.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 
-// =======================*======================= Mobile size (<768px)! =======================*======================= // 
+// =======================* Mobile size! (-> 767 including) *======================= // 
 .mobile-menu-open {
     background-color: transparent;
     border: transparent;
@@ -11,4 +11,15 @@
 
 .icon-mob {
     stroke: $dark-color;
+}
+
+/* --- Mobile size! (768+ = hide for all) --- */
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu-open {
+        display: none;
+    }
 }

@@ -1,6 +1,6 @@
-@import '../../utilities/placeholder';
+// @import '../../utilities/placeholder';
 
-// =======================*======================= Srction 1. Hero! =======================*======================= // 
+// =======================* Section 1. Hero! *======================= // 
 /* Button text style */
 .button-text {
     font-family: 'Roboto', sans-serif;
@@ -38,8 +38,93 @@
     }
 }
 
-// .hero-button:focus,
-// .hero-button:hover {
-//     color: $accent-color;
-//     background-color: $pressed-state-color;
-// }
+// =======================* Section 1. Hero! (-> 767 including) *======================= // 
+/* --- Section 1. Hero!! (-> 767 including) --- */
+.section-double-pad {
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+
+.bg-color-h {
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: $dark-color;
+} 
+
+.hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;  
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.hero-bg {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../../../images/hero/fon-pic-ofice-people-tab.jpg');
+    width: 100%;
+    height: 432px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-bg {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../../../images/hero/fon-pic-ofice-people-tab@2x.jpg');
+        }
+}
+
+// =======================* Section 1. Hero! (768+) *======================= // 
+/* --- Section 1. Hero!! (768+) --- */
+@media screen and (min-width: 768px) {
+    .hero-bg {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../../../images/hero/fon-pic-ofice-people-desc.jpg');
+        height: 436px;
+    }
+
+    .fool-title {
+        margin-bottom: 36px;
+    }
+
+    .hero-title {
+        font-size: 56px;        
+    }
+
+    @media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-bg {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../../../images/hero/fon-pic-ofice-people-desc@2x.jpg');
+        } 
+    }
+}
+
+// =======================* Section 1. Hero! (1200+) *======================= // 
+/* --- Section 1. Hero!! (1200+) --- */
+@media screen and (min-width: 1200px) {
+     .hero-bg {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../../../images/hero/fon-pic-ofice-people-desc.jpg');
+        max-width: 1440px;
+        height: 600px;
+    }
+
+    .fool-title {
+        margin-bottom: 48px;
+    }
+
+    .section-double-pad {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-bg {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../../../images/hero/fon-pic-ofice-people-desc@2x.jpg');
+        } 
+    }
+}

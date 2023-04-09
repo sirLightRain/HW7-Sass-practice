@@ -1,5 +1,5 @@
 
-// =======================*======================= Mobile size (<768px)! =======================*======================= // 
+// =======================* Main navigation! (-> 767 including) *======================= // 
 .page-header {
     padding-top: 24px;
     padding-bottom: 22px;
@@ -16,4 +16,90 @@
 
 .adress-nav {
     display: none;
+}
+
+// =======================* Main navigation! (768+) *======================= // 
+/* --- Main navigation! (768+) --- */
+@media screen and (min-width: 768px) {
+
+.main-nav {
+    display: flex;
+    align-items: center; 
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 120px;
+}
+
+.site-nav .item + .item {
+    margin-left: 40px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: color $transition-var;   
+
+    &:hover,
+    &:focus {
+        color: $primary-brand-color;    
+    }     
+}
+    
+/* A highlighted link to the active page */
+.site-nav .carrent {
+    color: blue;
+}
+
+.site-nav-item {
+    display: block;
+    position: relative;
+}
+
+.nav-index::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin: 0 auto; 
+    left: 0;
+    bottom: 0;
+    background-color: $primary-brand-color;
+    border-radius: 2px; 
+    }
+}
+
+// =======================* Main navigation! (1200+) *======================= // 
+/* --- Main navigation! (1200+) --- */
+@media screen and (min-width: 1200px) {
+    .site-nav {
+        margin-left: 76px;
+    }
+
+    .auth-nav-laptop {
+        display: none;
+    }
+
+    .auth-nav {
+        display: flex;  
+    }
+
+    .adress-nav .link:hover,
+    .adress-nav .link:focus {
+        color: $primary-brand-color;
+        
+    }
+     
+    .auth-nav .link {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .auth-nav .item + .item {
+        margin-left: 40px;
+    }
 }

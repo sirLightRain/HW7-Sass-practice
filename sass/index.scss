@@ -1,7 +1,20 @@
 @import './base/base-styles';
 @import './utilities/is-hiden';
+@import './utilities/mixin';
+@import './utilities/placeholder';
+// Header
 @import './components/header/logo';
 @import './components/header/main-navigation';
+@import './components/header/contacts';
 @import './components/header/mobile-button-menu';
 @import './components/header/mobile-drop-windov';
+// Main
 @import './components/main/section-1-hero';
+@import './components/main/section-2-privilegis';
+@import './components/main/section-3-what-are-we-doing';
+@import './components/main/section-4-our-team';
+@import './components/main/section-5-customers';
+// Footer
+@import './components/footer/footer';
+// Modal window!
+@import './components/modal-windov/modal-windov';
