@@ -1,5 +1,6 @@
 // =======================* Srction 5. Footer! (-> 767 including) *======================= // 
 /* --- Footer! (-> 767 including) --- */
+
 .footer-box {
     justify-content: center;
 }
@@ -22,7 +23,6 @@
 }
 
 .foter-cosial-media {
-    
     padding-bottom: 72px;
 }
 
@@ -95,7 +95,6 @@
 .subscribe-button {
     display: flex;
     
-    /* min-width: 165px; */
     height: 40px;
     align-self: center;
     align-items: center;
@@ -116,7 +115,7 @@
 
     &:hover,
     &:focus {
-    background-color: $pressed-state-color;
+        background-color: $pressed-state-color;
     }
 }
 
@@ -154,7 +153,6 @@
 
     .subscribe-button {
         margin-left: 24px;
-
     }
 
     .footer-email-input {
@@ -173,10 +171,12 @@
         text-align: left;
         padding-bottom: 0px;
     }
+
     .foter-cosial-media {
         margin-left: 120px;
         padding-bottom: 0px;
     }
+    
     .footer-subscribe-form {
         margin-left: 80px;
         width: 450px;

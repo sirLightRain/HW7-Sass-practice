@@ -1,4 +1,5 @@
-// @import '../utilities/placeholder';
+@import '../utilities/mixin';
+@import '../utilities/placeholder';
 
 // =======================*======================= Declare global variables! =======================*======================= // 
 
@@ -162,14 +163,9 @@ button {
 }
 
 .section-f-double-pad {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    @include section-pad(100px, 100px);
 }
 
-// .portfolio-section {
-//     padding-top: 96px;
-//     padding-bottom: 120px;
-// }
 
 .h-underline {
     border-bottom: 1px solid $accent-color;
@@ -182,12 +178,11 @@ button {
 
 /* BG section Our Team */
 .our-team-colors-bg {
-     background-color: $light-colors;
+    background-color: $light-colors;
 }
 
 // =======================*======================= Containers for mob-tab-desc! =======================*======================= // 
 .container {
-    /* width: 100%; */
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -200,7 +195,7 @@ button {
         margin-right: auto;
     }
 }
-/* --- Planshet container ---- */
+/* --- Tablet container ---- */
 @media  screen and (min-width: 768px) {
     .container {
         width: 768px;

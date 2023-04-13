@@ -1,4 +1,15 @@
 @charset "UTF-8";
+.medium-text-footer-social, .medium-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero-button, .button-text, .footer-text, .small-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -138,7 +149,6 @@ button {
 }
 
 .container {
-  /* width: 100%; */
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -151,7 +161,7 @@ button {
     margin-right: auto;
   }
 }
-/* --- Planshet container ---- */
+/* --- Tablet container ---- */
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -1096,7 +1106,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* min-width: 165px; */
   height: 40px;
   -ms-flex-item-align: center;
       align-self: center;

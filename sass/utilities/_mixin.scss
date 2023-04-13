@@ -10,3 +10,8 @@
     text-transform: uppercase;
 }
 
+@mixin section-pad($pad-top, $pad-bot) {
+    padding-top: $pad-top;
+    padding-bottom: $pad-bot;
+}
+
